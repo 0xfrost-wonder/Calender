@@ -1,0 +1,47 @@
+.toolbar-items
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  font-weight: normal
+
+  & menu:first-child
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    width: 50%
+
+    & .today-button
+      margin-left: 10%
+
+  & menu:last-child
+    width: 50%
+    display: flex
+    align-items: center
+    justify-content: flex-end
+
+    & .range-selector
+      width: 60px
+      font-size: 1rem
+
+  & .logo
+    display: flex
+    align-items: center
+
+    & > *
+      margin-left: 10px
+
+.large-icon
+  transform: scale(1.5)
+
+div.calendar-datepicker
+  button
+    font-size: 1.2rem
+    font-weight: normal
+
+  input
+    height: 0
+    width: 0
+    margin: 0
+    padding: 0
+    border: none

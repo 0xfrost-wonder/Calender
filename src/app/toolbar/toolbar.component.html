@@ -1,0 +1,56 @@
+<mat-toolbar color="primary">
+  <div class="toolbar-items">
+    <menu class="toolbar-icons-left">
+      <button class="menu-button" mat-button aria-label="Menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <div class="logo">
+        <span>My Calendar</span>
+      </div>
+      <button
+        matTooltip="{{today}}"
+        class="today-button"
+        mat-stroked-button
+        (click)="navigateDay(getNavigationDirections().TODAY)"
+        >
+        Today
+      </button>
+      <button
+        class="navigation-button"
+        matTooltip="Previous day"
+        mat-button aria-label="Previous day"
+        (click)="navigateDay(getNavigationDirections().PREV)"
+      >
+        <mat-icon>navigate_before</mat-icon>
+      </button>
+      <button
+        class="navigation-button"
+        matTooltip="Next day"
+        mat-button aria-label="Next day"
+        (click)="navigateDay(getNavigationDirections().NEXT)"
+      >
+        <mat-icon>navigate_next</mat-icon>
+      </button>
+      <div class="calendar-datepicker">
+        <input
+          matInput
+          [matDatepicker]="picker"
+          (dateChange)="onDateSelected($event)"
+        />
+        <button (click)="picker.open()" mat-button>{{month}} {{year}}</button>
+        <mat-datepicker #picker></mat-datepicker>
+      </div>
+    </menu>
+    <menu class="toolbar-icons-right">
+      <button matTooltip="Settings" mat-button aria-label="Settings">
+        <mat-icon>settings</mat-icon>
+      </button>
+      <mat-select class="range-selector" [(value)]="defaultSelection">
+        <mat-option *ngFor="let range of ranges" [value]="range">
+          {{range}}
+        </mat-option>
+      </mat-select>
+      <app-google-signin></app-google-signin>
+    </menu>
+  </div>
+</mat-toolbar>

@@ -1,0 +1,18 @@
+<button mat-stroked-button
+  (click)="signIn()"
+  *ngIf="!loggedIn"
+>
+  Sign In
+</button>
+
+<button *ngIf="loggedIn" mat-button (click)="logoutSelect.open()">
+  <img class="avatar" aria-role="menu" src="{{user.imageUrl}}">
+</button>
+<mat-select #logoutSelect class="logout-select">
+  <mat-option class="mat-option" (click)="signIn()" value="Refresh Events">
+    <span class="select-option">Refresh</span>
+  </mat-option>
+  <mat-option class="mat-option" (click)="logout()" value="Log out">
+    <span class="select-option">Log Out</span>
+  </mat-option>
+</mat-select>

@@ -1,0 +1,25 @@
+<section class="day-view">
+  <header class="day-header">
+    <div class="fab-action"></div>
+    <div class="current-day">
+      <h1>{{currentDate}} {{currentMonth}}, {{currentDay}}</h1>
+    </div>
+  </header>
+  <main class="day-calendar">
+    <!-- Render the Events -->
+    <div class="events-container">
+      <app-day-view-event
+        *ngFor="let event of events"
+        [startTime]="event.startTime"
+        [endTime]="event.endTime"
+        [eventName]="event.name"
+      >
+      </app-day-view-event>
+      <app-day-time-slot *ngFor="let slot of slots"
+        class="time-slot-row"
+        [start]="slot"
+      >
+      </app-day-time-slot>
+    </div>
+  </main>
+</section>

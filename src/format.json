@@ -1,0 +1,89 @@
+{
+  "kind": "calendar#event",
+  "etag": "\"3179536878349000\"",
+  "id": "6uf66q03i5td797dmqpv1mh5pk_20200627T133000Z",
+  "status": "confirmed",
+  "htmlLink": "https://www.google.com/calendar/event?eid=NnVmNjZxMDNpNXRkNzk3ZG1xcHYxbWg1cGtfMjAyMDA2MjdUMTMzMDAwWiBjY3Njb2RlckBt",
+  "created": "2020-05-04T19:23:07.000Z",
+  "updated": "2020-05-05T15:26:08.251Z",
+  "summary": "MWB - Relaxation Method & The Mental Process",
+  "description": "Maroko is inviting you to a scheduled Zoom meeting.\n\nTopic: MWB - Relaxation Method & The Mental Process\nStart Time: 7.00pm IST | 4.30pm EAT | 1.30pm GMT\n\nJoin Zoom Meeting\nhttps://zoom.us/j/93085395421?pwd=V2xiN3d4aFJrT3NGdWtZelFBeVprQT09\n\nMeeting ID: 930 8539 5421\nPassword: 024413",
+  "location": "https://zoom.us/j/93085395421?pwd=V2xiN3d4aFJrT3NGdWtZelFBeVprQT09",
+  "creator": {
+    "email": "marokogideon@gmail.com"
+  },
+  "organizer": {
+    "email": "marokogideon@gmail.com"
+  },
+  "start": {
+    "dateTime": "2020-06-27T19:00:00+05:30"
+  },
+  "end": {
+    "dateTime": "2020-06-27T20:00:00+05:30"
+  },
+  "recurringEventId": "6uf66q03i5td797dmqpv1mh5pk",
+  "originalStartTime": {
+    "dateTime": "2020-06-27T19:00:00+05:30"
+  },
+  "iCalUID": "6uf66q03i5td797dmqpv1mh5pk@google.com",
+  "sequence": 0,
+  "attendees": [
+    {
+      "email": "ccscoder@gmail.com",
+      "self": true,
+      "responseStatus": "accepted"
+    },
+    {
+      "email": "marokogideon@gmail.com",
+      "organizer": true,
+      "responseStatus": "accepted"
+    },
+    {
+      "email": "www.dkansh.gov.in@gmail.com",
+      "responseStatus": "accepted"
+    }
+  ],
+  "hangoutLink": "https://hangouts.google.com/hangouts/_/calendar/bWFyb2tvZ2lkZW9uQGdtYWlsLmNvbQ.6uf66q03i5td797dmqpv1mh5pk",
+  "conferenceData": {
+    "createRequest": {
+      "requestId": "760bf00k3neb0vjuso1ug7apno",
+      "conferenceSolutionKey": {
+        "type": "eventHangout"
+      },
+      "status": {
+        "statusCode": "success"
+      }
+    },
+    "entryPoints": [
+      {
+        "entryPointType": "video",
+        "uri": "https://hangouts.google.com/hangouts/_/calendar/bWFyb2tvZ2lkZW9uQGdtYWlsLmNvbQ.6uf66q03i5td797dmqpv1mh5pk"
+      }
+    ],
+    "conferenceSolution": {
+      "key": {
+        "type": "eventHangout"
+      },
+      "name": "Hangouts",
+      "iconUri": "https://lh5.googleusercontent.com/proxy/9vT2XwMHPzrIcW56Ic3FX6_OSYvrjHEwOUYOmA0eMoR-_sY59k4mQMd0JnqCp8GCOmqimFKP3vSeFaIe4k5MewpEcCuK6PXlB2Z4AKTMV78OB_CJqXHrrkAO-yf5FYJsiaTBwjUP9cU0lRlP-HPC2w"
+    },
+    "signature": "ADR/mfMPXvy5jwIexvB4mJ6zvFra"
+  },
+  "reminders": {
+    "useDefault": false,
+    "overrides": [
+      {
+        "method": "popup",
+        "minutes": 15
+      },
+      {
+        "method": "email",
+        "minutes": 10
+      },
+      {
+        "method": "popup",
+        "minutes": 10
+      }
+    ]
+  }
+}

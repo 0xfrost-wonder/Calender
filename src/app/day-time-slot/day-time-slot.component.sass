@@ -1,0 +1,19 @@
+.day-time-slot
+  width: 100%
+  height: 50px
+  display: flex
+  justify-content: flex-start
+
+  & > div.time-slot
+    height: 100%
+    padding-left: 10px
+    width: 100px
+    border-right: 1px solid #C8C4C3
+
+    & > div
+      transform: translate(0, -5px)
+      text-align: center
+
+  & > div.events
+    width: calc(100% - 100px)
+    border-bottom: .5px solid #C8C4C3
